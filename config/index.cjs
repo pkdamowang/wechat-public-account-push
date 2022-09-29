@@ -31,9 +31,9 @@ const USER_CONFIG = {
     // 金山每日一句
     CIBA: true,
     // 每日一言
-    oneTalk: false,
+    oneTalk: true,
     // 土味情话(彩虹屁)
-    earthyLoveWords: false,
+    earthyLoveWords: true,
     // 朋友圈文案
     momentCopyrighting: false,
     // 毒鸡汤
@@ -71,7 +71,7 @@ const USER_CONFIG = {
       // 所在省份
       province: '四川',
       // 所在城市
-      city: '江油',
+      city: '成都',
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '12-27',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -97,9 +97,9 @@ const USER_CONFIG = {
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
-        // 在一起的日子
+         在一起的日子
         { keyword: 'love_day', date: '2022-05-01' },
-        // 结婚纪念日
+         结婚纪念日
         { keyword: 'marry_day', date: '2023-05-01' },
         // 退伍日
         { keyword: 'ex_day', date: '2022-09-10' }
