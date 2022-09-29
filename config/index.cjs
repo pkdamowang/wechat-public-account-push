@@ -102,7 +102,7 @@ const USER_CONFIG = {
          结婚纪念日
         { keyword: 'marry_day', date: '2023-05-01' },
         // 退伍日
-        { keyword: 'ex_day', date: '2022-09-10' }
+        //{ keyword: 'ex_day', date: '2022-09-10' }
       ],
       // 课程表相关配置
       // 如果courseSchedule不存在或者为空（null）则认为没有课程
@@ -188,15 +188,15 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  //CALLBACK_TEMPLATE_ID: '',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  //CALLBACK_USERS: [
     {
       // 一般都填自己
-      name: '自己',
+      //name: '自己',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      //id: '',
     }
     // 你可以不断按格式往下增加
     // ...
@@ -232,13 +232,13 @@ const USER_CONFIG = {
    * 删除isShowAge属性，也会不展示岁数
    * --- 是否展示周岁信息结束 ---
    */
-  FESTIVALS: [
+ // FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '老婆', year: '2002', date: '11-19', isShowAge: true,
+     // type: '*生日', name: '老婆', year: '2002', date: '11-19', isShowAge: true,
     },
     {
-      type: '节日', name: '结婚纪念日', year: '2023', date: '05-01',
+     // type: '节日', name: '结婚纪念日', year: '2023', date: '05-01',
     },
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
     //{
@@ -256,7 +256,7 @@ const USER_CONFIG = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  //FESTIVALS_LIMIT: 4,
 
   /** 日期相关 */
 
@@ -264,7 +264,7 @@ const USER_CONFIG = {
    * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
    * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }}
    * */
-  CUSTOMIZED_DATE_LIST: [
+ //CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
     { keyword: 'love_day', date: '2022-09-08' },
     // 结婚纪念日
@@ -283,7 +283,7 @@ const USER_CONFIG = {
    * */
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
-    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+    //{ keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
     // 这样配置的话，就会每次随机选一句话发送
     {
       keyword: 'lover_prattle',
@@ -298,7 +298,7 @@ const USER_CONFIG = {
     // ...
   ],
   // 默认的课表配置
-  COURSE_SCHEDULE: null
+  //COURSE_SCHEDULE: null
 }
 
 module.exports = USER_CONFIG
